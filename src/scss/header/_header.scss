@@ -1,0 +1,43 @@
+.header {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__container {
+    width: 92%;
+    height: 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 15rem;
+    // background-color: green;
+    img {
+        width: 100%;
+    }
+}
+
+.header__text {
+    h3 {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-size: 1.6rem;
+        line-height: 1.2;
+        position: relative;
+        &::before {
+            content: "";
+            height: .7rem;
+            width: 11rem;
+            background-color: #fed51f;
+            position: absolute;
+            top: .6rem;
+            z-index: -1;
+        }
+    }
+}
