@@ -19,7 +19,7 @@
   height: 6rem;
   line-height: 1.2;
   h3, h4 {
-    font-size: 1.9rem;
+    font-size: 2.3rem;
     margin: auto;
     font-weight: 600;
   }
@@ -28,9 +28,9 @@
     position: relative;
     &::before {
       content: "";
-      height: .9rem;
+      height: 1.1rem;
       left: -2rem;
-      width: 13rem;
+      width: 15rem;
       background-color: #ff407a;
       position: absolute;
       top: .7rem;
@@ -41,13 +41,51 @@
     position: relative;
     &::before {
       content: "";
-      height: 1.3rem;
+      height: 1.6rem;
       left: -2rem;
-      width: 21rem;
+      width: 25rem;
       background-color: #ff407a;
       position: absolute;
-      top: .4rem;
+      top: .6rem;
       z-index: -1;
     }
+  }
+}
+
+.bloque3__why {
+  // background-color: red;
+  height: auto;
+  display: grid;
+  row-gap: .7rem;
+  margin-bottom: 1rem;
+  position: relative;
+
+  h3 {
+    margin: 0;
+    font-weight: 500;
+  }
+}
+
+.why__item {
+  display: grid;
+  grid-template-columns: 2.5rem auto;
+  img {
+    width: 2rem;
+  }
+}
+
+
+.bloque3__right {
+  // background-color: yellow;
+  width: 100%;
+  height: 23rem;
+  position: relative;
+  overflow: hidden;
+  img {
+    position: absolute;
+    width: 25rem;
+    bottom: 0;
+    left: 2rem;
+    transform: translateY(0rem);
   }
 }

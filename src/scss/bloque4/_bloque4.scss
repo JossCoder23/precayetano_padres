@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque4 {
+    background-color: v.$fondo_form2;
+    display: flex;
+    justify-content: center;
+}
+
+.bloque4__container {
+    height: 8rem;
+    width: 92%;
+    // background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        height: 5rem;
+        border-radius: 1rem;
+        background-color: white;
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        color: v.$fondo_form2;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24rem;
+        font-size: 1.9rem;
+    }
+}

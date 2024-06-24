@@ -28,7 +28,7 @@ html(lang="es")
         .header
             .header__container
                 .header__logo
-                    img(src="img/logo_top.webp", alt="")
+                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/06/logo_top.webp", alt="")
                 .header__text
                     h3 HAS QUE TU
                     h3 HIJO INGRESE
@@ -37,7 +37,7 @@ html(lang="es")
             .bloque1__container
                 .bloque1__bloque1One
                     .imageBloqueOne 
-                        img(src="img/imagen_top.webp", alt="")
+                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/06/imagen_top-scaled.webp", alt="")
                     .bloque1One__left
                     .bloque1One__right
                     .bloque1Text
@@ -153,6 +153,18 @@ html(lang="es")
                                     option(value='2023') Ya acabe en el 2023
                                     option(value='2022') Ya acabe en el 2022
                                     option(value='2021') Ya acabe en el 2021
+                                // INPUTS
+                                input#LEADCF183(type='hidden' name='LEADCF183' value='')
+                                input#LEADCF189(type='hidden' name='LEADCF189' value='')
+                                input#LEADCF24(type='hidden' name='LEADCF24' value='')
+                                input#LEADCF184(type='hidden' name='LEADCF184' value='')
+                                input#LEADCF182(type='hidden' name='LEADCF182' value='')
+                                input#LEADCF22(type='hidden' name='LEADCF22' value='')
+                                input#LEADCF168(type='hidden' name='LEADCF168' value='')
+                                input#LEADCF203(type='hidden' name='LEADCF203' value='')
+                                input#LEADCF6(type='hidden' name='LEADCF6' value='ADMINISTRACION')
+                                input#LEADCF198(type='hidden' name='LEADCF198' value='')
+                                input#LEADCF7(type='hidden' name='LEADCF7' value='Pregrado')
                                 .terminos
                                     input#privacyTool3503766000237491098(type='checkbox' autocomplete='off' name='privacyTool' onclick='disableSubmit()' required)
                                     label#labelCheckbox(for='privacyTool3503766000237491098')
@@ -184,7 +196,7 @@ html(lang="es")
                                         xhr.open('get', 'https://lp.cayetano.edu.pe/wp-content/uploads/2024/02/colegios-peru-2024.json', true);
                                         xhr.send(null);
 
-                                        //ACA AGREGAR FETCH reemplazando XMLhttprequest
+                                    //-     //ACA AGREGAR FETCH reemplazando XMLhttprequest
 
                                     });
 	
@@ -396,7 +408,7 @@ html(lang="es")
                                     if (utmSource){
                                         source.value = utmSource;
                                     }else {
-                                        source.value = "";
+                                        source.value = "va";
                                     }
                                     if (utmId){
                                         id.value = utmId;
@@ -408,8 +420,8 @@ html(lang="es")
                                     }else {
                                         medium.value = "";
                                     }
-                                    if (utmCampaing){
-                                        campaign.value = utmCampaing;
+                                    if (utmCampaign){
+                                        campaign.value = utmCampaign;
                                     }else {
                                         campaign.value = "";
                                     }
@@ -492,8 +504,39 @@ html(lang="es")
                     .itemIcons.itemicon6.iconcolor2
         .bloque3 
             .bloque3Container
-                .bloque3__title
-                    h4 ¿POR QUÉ ESTUDIAR
-                    h3 EN LA PRE?
+                .bloque3__left
+                    .bloque3__title
+                        h4 ¿POR QUÉ ESTUDIAR
+                        h3 EN LA PRE?
+                    .bloque3__why
+                        .why__item
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/06/icon-check-scaled.webp", alt="icon-check")
+                            h3 Preparación según la Guía del Postulante de Cayetano Heredia.
+                        .why__item
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/06/icon-check-scaled.webp", alt="icon-check")
+                            h3 Refuerza y nivela tus conocimientos antes de ingresar a la universidad.
+                        .why__item
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/06/icon-check-scaled.webp", alt="icon-check")
+                            h3 Orienta al estudiante a elegir su futura profesión acorde a sus aptitudes y vocación personal.
+                        .why__item
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/06/icon-check-scaled.webp", alt="icon-check")
+                            h3 Acercamiento del estudiante con la metodología de estudio y trabajo acorde con el nivel universitario.
+                .bloque3__right
+                    img(src="img/imagen_bottom.webp", alt="")
+        .bloque4
+            .bloque4__container
+                a(href="#crmWebToEntityForm") ¡QUIERO INSCRIBIRME!
+        footer
+            .footer__container
+                .footerRight
+                    .footerRight__logo
+                        img(src="img/logo_bottom.webp", alt="")
+                    .footerRight__direction
+                        h3 Av. Armendáriz 445 – Miraflores
+                            br 
+                            | (a tres cuadras de Larcomar)
+                .footerLeft
+                    .footerLeft__normas
+                        h3 *Se debe de cumplir con los requisitos que exige la Oficina de Admisión, Matrícula y Registro Académico (OAMRA). Las vacantes son asginadas en estricto orden de mérito.
         //- script(src="./js/script.js" async)
         script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
