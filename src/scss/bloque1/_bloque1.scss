@@ -19,8 +19,10 @@
         position: absolute;
         bottom: -.3rem;
         text-align: center;
+        overflow: hidden;
         img {
             width: 32rem;
+            transform: translateY(25rem);
         }
     }
     .bloque1One__left {

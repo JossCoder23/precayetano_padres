@@ -1,0 +1,53 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque3 {
+  // background-color: red;
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.bloque3Container {
+  // background-color: yellow;
+  width: 93%;
+  height: auto;
+}
+
+.bloque3__title {
+  height: 6rem;
+  line-height: 1.2;
+  h3, h4 {
+    font-size: 1.9rem;
+    margin: auto;
+    font-weight: 600;
+  }
+  h3 {
+    font-weight: 800;
+    position: relative;
+    &::before {
+      content: "";
+      height: .9rem;
+      left: -2rem;
+      width: 13rem;
+      background-color: #ff407a;
+      position: absolute;
+      top: .7rem;
+      z-index: -1;
+    }
+  }
+  h4 {
+    position: relative;
+    &::before {
+      content: "";
+      height: 1.3rem;
+      left: -2rem;
+      width: 21rem;
+      background-color: #ff407a;
+      position: absolute;
+      top: .4rem;
+      z-index: -1;
+    }
+  }
+}
