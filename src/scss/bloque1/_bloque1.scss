@@ -6,6 +6,13 @@
     width: 100%;
 }
 
+.bloque1__container {
+    @include m.desktop_1020 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);    
+    }
+}
+
 .bloque1__bloque1One {
     height: 30rem;
     width: 100%;
@@ -13,6 +20,10 @@
     grid-template-columns: repeat(2, 1fr);
     position: relative;
     z-index: -1;
+    @include m.desktop_1020 {
+        height: 100%;
+        grid-template-columns: none;
+    }
     .imageBloqueOne {
         height: auto;
         width:100%;
@@ -20,9 +31,14 @@
         bottom: -.5rem;
         text-align: center;
         overflow: hidden;
+        right: 3rem;
+        bottom: -.1rem;
         img {
             width: 32rem;
             // transform: translateY(25rem);
+            @include m.desktop_1020 {
+                width: 55rem;
+            }
         }
     }
     .bloque1One__left {
@@ -30,11 +46,17 @@
     }
     .bloque1One__right {
         background-color: v.$primario;
+        @include m.desktop_1020 {
+            display: none;
+        }
     }
     .bloque1Text {
         bottom: 1rem;
         position: absolute;
         left: 1rem;
+        @include m.desktop_1020 {
+            bottom: 4rem;
+        }
         h2, h3 {
             margin: 0;
             font-family: "Poppins", sans-serif;
@@ -45,6 +67,9 @@
             z-index: 10;
         }
         .white {
+            @include m.desktop_1020 {
+                font-size: 2.3rem;
+            }
             &::before {
                 content: "";
                 height: 2.5rem;
@@ -54,11 +79,19 @@
                 position: absolute;
                 top: -.2rem;
                 z-index: -1;
+                @include m.desktop_1020 {
+                    height: 3rem;
+                    top: .4rem;
+                    width: 46rem;
+                }
             }
         }
         .yellow1 {
             font-size: 2.3rem;
             font-weight: 600;
+            @include m.desktop_1020 {
+                font-size: 3.3rem;
+            }
             &::before {
                 content: "";
                 height: 2rem;
@@ -68,11 +101,19 @@
                 position: absolute;
                 top: .7rem;
                 z-index: -1;
+                @include m.desktop_1020 {
+                    top: 1.2rem;
+                    height: 2.5rem;
+                    width: 28rem;
+                }
             }
         }
         .yellow2 {
             font-size: 2.5rem;
             font-weight: 900;
+            @include m.desktop_1020 {
+                font-size: 3.5rem;
+            }
             &::before {
                 content: "";
                 height: 2rem;
@@ -82,6 +123,11 @@
                 position: absolute;
                 top: .8rem;
                 z-index: -1;
+                @include m.desktop_1020 {
+                    height: 3.2rem;
+                    top: 1rem;
+                    width: 24rem;
+                }
             }
         }
     }
@@ -94,6 +140,10 @@
     align-items: flex-start;
     justify-content: center;
     position: relative;
+    @include m.desktop_1020 {
+        align-items: center;
+        height: 57rem;
+    }
 }
 
 .bloque1Two__colors {
@@ -128,6 +178,12 @@
     justify-content: center;
     border-radius: 1rem;
     z-index: 5;
+    @include m.phone_375 {
+        width: 32rem;
+    }
+    @include m.phone_428 {
+        width: 36rem;
+    }
 }
 
 .formContainer {
@@ -144,6 +200,7 @@
         height: 2rem;
         justify-content: center;
         margin: 0;
+        font-weight: 800;
     }
     .formTitle_one {
         font-size: 1.6rem;

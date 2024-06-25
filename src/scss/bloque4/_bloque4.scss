@@ -2,7 +2,7 @@
 @use 'base/mixins' as m;
 
 .bloque4 {
-    background-color: v.$fondo_form2;
+    background-color: v.$primario;
     display: flex;
     justify-content: center;
 }
@@ -14,6 +14,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include m.desktop_1020 {
+        height: 11rem;
+    }
     a {
         height: 5rem;
         border-radius: 1rem;
@@ -27,5 +30,10 @@
         justify-content: center;
         width: 24rem;
         font-size: 1.9rem;
+        @include m.desktop_1020 {
+            height: 6rem;
+            width: 32rem;
+            font-size: 2.2rem;
+        }
     }
 }

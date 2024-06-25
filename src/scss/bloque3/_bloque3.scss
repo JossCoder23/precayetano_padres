@@ -7,12 +7,25 @@
   height: auto;
   align-items: center;
   justify-content: center;
+  @include m.desktop_1020 {
+    height: 40rem;
+    align-items: flex-start;
+    overflow: hidden;
+    margin-top: 3rem;
+  }
 }
 
 .bloque3Container {
   // background-color: yellow;
   width: 93%;
   height: auto;
+  @include m.phone_360 {
+    padding: 0 1rem;
+  }
+  @include m.desktop_1020 {
+    display: grid;
+    grid-template-columns: 65% 35%;
+  }
 }
 
 .bloque3__title {
@@ -22,6 +35,9 @@
     font-size: 2.3rem;
     margin: auto;
     font-weight: 600;
+    @include m.desktop_1020 {
+      font-size: 3rem;
+    }
   }
   h3 {
     font-weight: 800;
@@ -35,6 +51,16 @@
       position: absolute;
       top: .7rem;
       z-index: -1;
+      @include m.phone_360 {
+        left: -17rem;
+        width: 30rem;
+      }
+      @include m.desktop_1020 {
+        width: 60rem;
+        left: -43rem;
+        height: 1.8rem;
+        top: .9rem;
+      }
     }
   }
   h4 {
@@ -48,6 +74,15 @@
       position: absolute;
       top: .6rem;
       z-index: -1;
+      @include m.phone_360 {
+        left: -21rem;
+        width: 45rem;
+      }
+      @include m.desktop_1020 {
+        width: 60rem;
+        left: -29.5rem;
+        top: 1rem;
+      }
     }
   }
 }
@@ -59,33 +94,80 @@
   row-gap: .7rem;
   margin-bottom: 1rem;
   position: relative;
+  @include m.desktop_1020 {
+    margin-top: 3rem;
+  }
   h3 {
     font-size: 1.3rem;
     margin: 0;
     font-weight: 500;
+    @include m.phone_414 {
+      font-size: 1.5rem;
+    }
+    @include m.desktop_1020 {
+      font-size: 2rem;
+    }
   }
 }
 
 .why__item {
   display: grid;
   grid-template-columns: 2.5rem auto;
+  @include m.desktop_1020 {
+    grid-template-columns: 3.5rem auto;
+  }
   img {
-    width: 2rem;
+    width: 3rem;
   }
 }
-
 
 .bloque3__right {
   // background-color: yellow;
   width: 100%;
-  height: 23rem;
-  position: relative;
+  height: auto;
   overflow: hidden;
-  img {
-    position: absolute;
-    width: 25rem;
-    bottom: -.3rem;
-    left: 2rem;
-    transform: translateY(0rem);
+  // background-color: red;
+  @include m.desktop_1020 {
+    overflow: visible;
   }
+  .bloque3__imageContainer {
+    position: relative;
+    height: 23rem;
+    @include m.tablet_720 {
+      // background-color: yellow;
+      height: 25rem;
+      width: 100%;
+    }
+    img {
+      // background-color: green;
+      position: absolute;
+      width: 23rem;
+      bottom: -.3rem;
+      left: 3rem;
+      // transform: translateY(0rem);
+      @include m.phone_360 {
+        left: 3rem;
+      }
+      @include m.phone_375 {
+        left: 4.5rem;
+      }
+      @include m.phone_390 {
+        left: 5.5rem;  
+      }
+      @include m.phone_414 {
+        left: 6rem;
+      }
+      @include m.tablet_720 {
+        width: 27rem;
+        left: 35rem;
+        text-align: center;
+      }
+      @include m.desktop_1020 {
+        left: -3rem;
+        bottom: -15.5rem;
+        width: 33rem;
+      }
+    }
+  }
+  
 }
