@@ -71,5 +71,56 @@
   .iconcolor2 {
     background-color: #d3d3d3;
   }
+}
 
+.itemIcons {
+  display: grid;
+  padding: 1rem; 
+  row-gap: .5rem; 
+}
+
+.itemIconsImage {
+  height: 7rem;
+  width: 100%;
+  // background-color: red;
+  text-align: center;
+  img {
+    padding-top: .5rem;
+    width: 6rem;
+    // height: 100%;
+  }
+}
+
+.itemIconsImage4 {
+  img {
+    width: 4.5rem;
+  }
+}
+
+.itemIconsImage5 {
+  img {
+    width: 7rem;
+  }
+}
+
+.itemIconsImage5,
+.itemIconsImage6 {
+  img {
+    margin-top: 1rem;
+  }
+}
+
+.itemIconText  {
+  // background-color: green;
+  h3 {
+    padding: 0 1rem;
+    text-align: center;
+    margin: 0;
+    height: 5rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+    span {
+      font-weight: 800;
+    }
+  }
 }

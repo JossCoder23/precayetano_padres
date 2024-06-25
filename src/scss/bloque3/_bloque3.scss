@@ -59,8 +59,8 @@
   row-gap: .7rem;
   margin-bottom: 1rem;
   position: relative;
-
   h3 {
+    font-size: 1.3rem;
     margin: 0;
     font-weight: 500;
   }
@@ -84,7 +84,7 @@
   img {
     position: absolute;
     width: 25rem;
-    bottom: 0;
+    bottom: -.3rem;
     left: 2rem;
     transform: translateY(0rem);
   }
