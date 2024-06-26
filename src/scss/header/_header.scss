@@ -19,6 +19,13 @@
         height: 11rem;
         width: 85%;
     }
+    @include m.desktop_1280 {
+        width: 80%;
+    }
+    @include m.desktop_1360 {
+        width: v.$max-width-1360;
+        height: 13rem;
+    }
 }
 
 .header__logo {
@@ -26,6 +33,9 @@
     // background-color: green;
     @include m.desktop_1020 {
         width: 18rem;
+    }
+    @include m.desktop_1360 {
+        width: 20rem;
     }
     img {
         width: 100%;

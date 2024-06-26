@@ -31,13 +31,19 @@
         bottom: -.5rem;
         text-align: center;
         overflow: hidden;
-        right: 3rem;
-        bottom: -.1rem;
+        right: 1rem;
+        bottom: -.4rem;
         img {
             width: 32rem;
             // transform: translateY(25rem);
             @include m.desktop_1020 {
                 width: 55rem;
+            }
+            @include m.desktop_1280 {
+                width: 63rem;
+            }
+            @include m.desktop_1440 {
+                width: 73rem;
             }
         }
     }
@@ -70,6 +76,9 @@
             @include m.desktop_1020 {
                 font-size: 2.3rem;
             }
+            @include m.desktop_1440 {
+                font-size: 3.3rem;
+            }
             &::before {
                 content: "";
                 height: 2.5rem;
@@ -84,6 +93,11 @@
                     top: .4rem;
                     width: 46rem;
                 }
+                @include m.desktop_1440 {
+                    height: 4rem;
+                    top: .6rem;
+                    width: 65rem;
+                }
             }
         }
         .yellow1 {
@@ -91,6 +105,9 @@
             font-weight: 600;
             @include m.desktop_1020 {
                 font-size: 3.3rem;
+            }
+            @include m.desktop_1440 {
+                font-size: 4.3rem;
             }
             &::before {
                 content: "";
@@ -106,6 +123,10 @@
                     height: 2.5rem;
                     width: 28rem;
                 }
+                @include m.desktop_1440 {
+                    height: 4rem;
+                    width: 35.5rem;
+                }
             }
         }
         .yellow2 {
@@ -113,6 +134,9 @@
             font-weight: 900;
             @include m.desktop_1020 {
                 font-size: 3.5rem;
+            }
+            @include m.desktop_1440 {
+                font-size: 4.5rem;
             }
             &::before {
                 content: "";
@@ -127,6 +151,11 @@
                     height: 3.2rem;
                     top: 1rem;
                     width: 24rem;
+                }
+                @include m.desktop_1440 {
+                    height: 4rem;
+                    top: 1.4rem;
+                    width: 30rem;
                 }
             }
         }
@@ -143,6 +172,12 @@
     @include m.desktop_1020 {
         align-items: center;
         height: 57rem;
+    }
+    @include m.desktop_1280 {
+        height: 65rem;
+    }
+    @include m.desktop_1440 {
+        height: 72rem;
     }
 }
 
@@ -184,6 +219,14 @@
     @include m.phone_428 {
         width: 36rem;
     }
+    @include m.desktop_1280 {
+        width: 40rem;
+        height: 55rem;
+    }
+    @include m.desktop_1440 {
+        width: 45rem;
+        height: 60rem;
+    }
 }
 
 .formContainer {
@@ -201,12 +244,30 @@
         justify-content: center;
         margin: 0;
         font-weight: 800;
+        @include m.desktop_1280 {
+            height: 2.5rem;
+        }
+        @include m.desktop_1440 {
+            height: 3rem;
+        }
     }
     .formTitle_one {
         font-size: 1.6rem;
+        @include m.desktop_1280 {
+            font-size: 1.8rem;
+        }
+        @include m.desktop_1440 {
+            font-size: 2.2rem;
+        }
     }
     .formTitle_two {
         font-size: 1.55rem;
+        @include m.desktop_1280 {
+            font-size: 1.8rem;
+        }
+        @include m.desktop_1440 {
+            font-size: 2.15rem;
+        }
     }
 }
 
@@ -218,6 +279,12 @@
     display: grid;
     grid-template-rows: repeat(10, 1fr);
     row-gap: 1rem;
+    @include m.desktop_1280 {
+        height: 43rem;
+    }
+    @include m.desktop_1440 {
+        height: 46rem;
+    }
     input, select {
         background-color: transparent;
         border: 1px solid black;
@@ -271,6 +338,9 @@
         a {
             color: black;
             font-size: 1.1rem;
+            @include m.desktop_1440 {
+                font-size: 1.4rem;
+            }
         }
     }
 }
@@ -289,6 +359,9 @@
         align-items: center;
         justify-content: center;
         color: black;
+        @include m.desktop_1440 {
+            font-size: 1.7rem;
+        }
     }
 }
 

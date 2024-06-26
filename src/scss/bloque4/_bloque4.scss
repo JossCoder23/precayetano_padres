@@ -17,6 +17,9 @@
     @include m.desktop_1020 {
         height: 11rem;
     }
+    @include m.desktop_1280 {
+        height: 14rem;
+    }
     a {
         height: 5rem;
         border-radius: 1rem;
@@ -34,6 +37,11 @@
             height: 6rem;
             width: 32rem;
             font-size: 2.2rem;
+        }
+        @include m.desktop_1280 {
+            height: 7rem;
+            width: 40rem;
+            font-size: 2.8rem;
         }
     }
 }
